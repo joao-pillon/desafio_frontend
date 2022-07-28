@@ -19,6 +19,10 @@ const Table = () => {
         <td>{info.email}</td>
         <td>{info.company.name}</td>
         <td>{info.username}</td>
+        <td className="icons">
+          <div className="edit"></div>
+          <div className="delete"></div>
+        </td>
       </tr>
     );
   });
@@ -32,12 +36,13 @@ const Table = () => {
             <th>Email</th>
             <th>Cliente</th>
             <th>Perfil de acesso</th>
+            <th>...</th>
           </tr>
         </thead>
         <tbody>{TableData}</tbody>
       </table>
     </>
-  )
+  );
 };
 
 export default Table;
