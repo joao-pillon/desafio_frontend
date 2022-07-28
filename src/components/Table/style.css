@@ -1,0 +1,32 @@
+table{
+    width: 900px;
+    height: 500px;;
+    text-transform: upperCase;
+    padding:0px;
+    margin:50px auto;
+
+    background-color:lightblue;
+    vertical-align: baseline;
+    justify-content: left;
+    font-size:12px;
+
+}
+
+tr{
+
+    padding:10px auto;
+    justify-items: center;
+}
+
+th, td{
+    background-color:white;
+}
+
+body {
+	line-height: 1.5;
+}
+ol, ul {
+	list-style: none;
+}
+
+
