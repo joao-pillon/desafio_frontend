@@ -1,6 +1,6 @@
 :root {
   --branco: #f1f1f1;
-  --cinza-50: #eeeeee;
+  --cinza-50: #ebe9e9;
   --cinza-100: #dcdcdc;
   --cinza-200: #d3d3d3;
   --cinza-400: #c0c0c0;
@@ -40,6 +40,12 @@ tr,
 table {
   background-color: var(--branco);
   justify-items: center;
+  
+}
+
+.impar{
+  background-color: var(--cinza-50);
+
 }
 
 .Container {

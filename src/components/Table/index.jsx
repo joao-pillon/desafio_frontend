@@ -13,21 +13,38 @@ const Table = () => {
   }, []);
 
   const TableData = data.map((info) => {
+
+    if (info.id % 2 === 0) {
+
+    
     return (
       <tr>
-        <td bgcolor="blue">{info.name}</td>
-        <td>{info.email}</td>
-        <td>{info.company.name}</td>
-        <td>
+        <td className="par">{info.name}</td>
+        <td className="par">{info.email}</td>
+        <td className="par">{info.company.name}</td>
+        <td className="par">
           <div className="profile">{info.username}</div>
         </td>
-        <td className="icons">
-          <div className="edit"></div>
-          <div className="delete"></div>
+        <td className="par" className="icons">
+          <div className="par" className="edit"></div>
+          <div className="par" className="delete"></div>
         </td>
       </tr>
     );
-  });
+  };
+  return   <tr>
+  <td className="impar">{info.name}</td>
+  <td className="impar">{info.email}</td>
+  <td className="impar">{info.company.name}</td>
+  <td className="impar">
+    <div className="profile">{info.username}</div>
+  </td>
+  <td className="impar" className="icons">
+    <div className="impar" className="edit"></div>
+    <div className="impar" className="delete"></div>
+  </td>
+</tr>
+});
 
   return (
     <div className="Container">
