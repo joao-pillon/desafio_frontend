@@ -1,4 +1,4 @@
-import Table from "./components/Table/index";
+import Table from "./pages/Table/index";
 import GlobalStyle from './theme/globalStyles';
 function App() {
   return (

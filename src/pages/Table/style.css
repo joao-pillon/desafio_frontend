@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
 :root {
   --branco: #f6f6f6;
   --branco-100: #f1f1f1;
-  --cinza-50: #ebe9e9;
+  --cinza-50: #ebe9e9bd;
   --cinza-100: #dcdcdc;
   --cinza-200: #d3d3d3;
   --cinza-400: #c0c0c0;
@@ -18,9 +20,9 @@
   line-height: 1.5;
   list-style: none;
 
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Inter', sans-serif;
+  font-width: 600px;
 
-  font-size: 11px;
   color: var(--cinza-700);
 }
 
@@ -29,7 +31,7 @@ table {
   margin: 0px auto;
   width: 190vh;
   height: 80vh;
-
+  text-shadow: 0px 1px 1px rgba(88,88,88,0.2);
   text-align: left;
   vertical-align: baseline;
   justify-content: left;
@@ -43,7 +45,7 @@ table {
 }
 
 .icons,
-.impar-icons:hover {
+.par-icons:hover {
   cursor: pointer;
 }
 
@@ -54,29 +56,56 @@ tr:hover {
 th {
   padding: 10px;
   padding-left: 20px;
+  font-size: 11px;
 }
 
 td {
   padding-left: 20px;
+  font-size: 10px;
 }
 
-.impar {
+input:before {
+  color:#f1f1f1;
+  content: '✔';
+  font-size: 18px;
+}
+
+input{
+  all:unset;
+  cursor: pointer;
+  margin: 4px auto;
+  border: 2px solid rgb(27, 199, 199);
+  border-radius:4px;
+  width: 16px;
+  height: 16px;
+
+  background-color: rgb(27, 199, 199);
+}
+
+input:checked{
+  background-color:#f1f1f1;
+}
+.par {
   background-color: var(--branco-100);
   box-shadow: 0px 0px 5px 0px var(--branco-100);
   -webkit-box-shadow: 0px 0px 5px 0px var(--branco-100);
   -moz-box-shadow: 0px 0px 5px 0px var(--branco-100);
+  border-top:1px solid #ebe9e9bd;
+  border-bottom:1px solid #ebe9e9bd;
 }
 
 .Container {
-  width: 191vh;
+  width: 193vh;
   height: 100%;
 
   margin: 40px auto;
   padding-bottom: 10px;
   padding-top: 9px;
 
-  background-color: var(--cinza-50);
-  border-left: 1px solid var(--azul-300);
+  background-color: var(--branco-100);
+  border-left: 1px solid #739ebe;
+  box-shadow: 1px px 5px 0px rgba(53,104,146,0.75);
+
   border-top-right-radius: 7px;
   border-bottom-right-radius: 7px;
 }
@@ -95,12 +124,11 @@ td {
 }
 
 .icons {
+
   height: 95%;
   display: flex;
-  justify-content: center;
   align-items: center;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+
 }
 
 .grid {
@@ -116,23 +144,24 @@ td {
   font-size: 9px;
   font-weight: bold;
   text-align: center;
-  color: var(--azul-400);
-
-  background-color: var(--azul-200);
+  color: #356892;
+/*  c6e4f5*/
+  background-color: #c0ecf7;
   border-radius: 7px;
 }
 
-.impar-icons {
+.par-icons {
   height: 95%;
   display: flex;
-  justify-content: center;
   align-items: center;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+
+
   background-color: var(--branco-100);
   box-shadow: 0px 0px 5px 0px var(--branco-100);
   -webkit-box-shadow: 0px 0px 5px 0px var(--branco-100);
   -moz-box-shadow: 0px 0px 5px 0px var(--branco-100);
+  border-top:1px solid #ebe9e9bd;
+  border-bottom:1px solid #ebe9e9bd;
 }
 
 .delete {
